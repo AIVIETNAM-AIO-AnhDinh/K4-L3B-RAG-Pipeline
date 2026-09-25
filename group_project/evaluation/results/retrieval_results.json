@@ -1,0 +1,936 @@
+{
+  "top_k": 5,
+  "hit_coverage_threshold": 0.7,
+  "strategies": {
+    "dense": {
+      "summary": {
+        "hit": 0.9,
+        "reciprocal_rank": 0.6958,
+        "context_coverage": 0.9582,
+        "latency_s": 0.0275
+      },
+      "rows": [
+        {
+          "id": "q01",
+          "latency_s": 0.0341,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-5",
+            "news/article_07.md::chunk-19",
+            "news/article_07.md::chunk-5",
+            "news/article_07.md::chunk-21",
+            "legal/shopee-return-policy.md::chunk-16"
+          ]
+        },
+        {
+          "id": "q02",
+          "latency_s": 0.0279,
+          "hit": true,
+          "reciprocal_rank": 0.25,
+          "first_hit_rank": 4,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-8",
+            "legal/shopee-return-policy.md::chunk-15",
+            "legal/shopee-return-policy.md::chunk-4",
+            "legal/shopee-return-policy.md::chunk-7",
+            "legal/shopee-return-policy.md::chunk-14"
+          ]
+        },
+        {
+          "id": "q03",
+          "latency_s": 0.0277,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-10",
+            "legal/shopee-return-policy.md::chunk-8",
+            "legal/shopee-return-policy.md::chunk-9",
+            "legal/shopee-return-policy.md::chunk-12",
+            "legal/shopee-return-policy.md::chunk-11"
+          ]
+        },
+        {
+          "id": "q04",
+          "latency_s": 0.0271,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-16",
+            "news/article_07.md::chunk-22",
+            "news/article_07.md::chunk-21",
+            "news/article_07.md::chunk-8",
+            "legal/shopee-return-policy.md::chunk-25"
+          ]
+        },
+        {
+          "id": "q05",
+          "latency_s": 0.0273,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-27",
+            "news/article_07.md::chunk-8",
+            "legal/shopee-return-policy.md::chunk-25",
+            "legal/shopee-return-policy.md::chunk-24",
+            "legal/shopee-return-policy.md::chunk-20"
+          ]
+        },
+        {
+          "id": "q06",
+          "latency_s": 0.027,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_01.md::chunk-8",
+            "news/article_01.md::chunk-1",
+            "news/article_01.md::chunk-2",
+            "news/article_01.md::chunk-4",
+            "news/article_01.md::chunk-9"
+          ]
+        },
+        {
+          "id": "q07",
+          "latency_s": 0.027,
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "first_hit_rank": null,
+          "context_coverage": 0.6818,
+          "retrieved_ids": [
+            "news/article_02.md::chunk-6",
+            "legal/shopee-return-policy.md::chunk-21",
+            "news/article_07.md::chunk-24",
+            "legal/shopee-return-policy.md::chunk-20",
+            "legal/shopee-return-policy.md::chunk-22"
+          ]
+        },
+        {
+          "id": "q08",
+          "latency_s": 0.0268,
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "first_hit_rank": 2,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_01.md::chunk-6",
+            "news/article_04.md::chunk-0",
+            "news/article_04.md::chunk-4",
+            "news/article_04.md::chunk-6",
+            "news/article_04.md::chunk-2"
+          ]
+        },
+        {
+          "id": "q09",
+          "latency_s": 0.0269,
+          "hit": true,
+          "reciprocal_rank": 0.3333333333333333,
+          "first_hit_rank": 3,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_05.md::chunk-2",
+            "news/article_05.md::chunk-1",
+            "news/article_05.md::chunk-3",
+            "news/article_05.md::chunk-0",
+            "legal/shopee-return-policy.md::chunk-18"
+          ]
+        },
+        {
+          "id": "q10",
+          "latency_s": 0.0271,
+          "hit": true,
+          "reciprocal_rank": 0.3333333333333333,
+          "first_hit_rank": 3,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_07.md::chunk-22",
+            "news/article_07.md::chunk-19",
+            "news/article_07.md::chunk-6",
+            "news/article_07.md::chunk-5",
+            "news/article_07.md::chunk-7"
+          ]
+        },
+        {
+          "id": "q11",
+          "latency_s": 0.0289,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-dispute-resolution.md::chunk-2",
+            "legal/shopee-dispute-resolution.md::chunk-0",
+            "legal/shopee-dispute-resolution.md::chunk-6",
+            "news/article_07.md::chunk-21",
+            "legal/shopee-dispute-resolution.md::chunk-1"
+          ]
+        },
+        {
+          "id": "q12",
+          "latency_s": 0.0266,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-dispute-resolution.md::chunk-5",
+            "legal/shopee-dispute-resolution.md::chunk-4",
+            "legal/shopee-dispute-resolution.md::chunk-3",
+            "legal/shopee-dispute-resolution.md::chunk-7",
+            "legal/shopee-dispute-resolution.md::chunk-1"
+          ]
+        },
+        {
+          "id": "q13",
+          "latency_s": 0.0286,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-shipping-policy.md::chunk-2",
+            "legal/shopee-shipping-policy.md::chunk-33",
+            "legal/shopee-shipping-policy.md::chunk-1",
+            "legal/shopee-shipping-policy.md::chunk-31",
+            "legal/shopee-shipping-policy.md::chunk-4"
+          ]
+        },
+        {
+          "id": "q14",
+          "latency_s": 0.0268,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-shipping-policy.md::chunk-30",
+            "legal/shopee-shipping-policy.md::chunk-29",
+            "legal/shopee-shipping-policy.md::chunk-31",
+            "legal/shopee-shipping-policy.md::chunk-32",
+            "news/article_07.md::chunk-27"
+          ]
+        },
+        {
+          "id": "q15",
+          "latency_s": 0.0285,
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "first_hit_rank": 2,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-shipping-policy.md::chunk-28",
+            "legal/shopee-shipping-policy.md::chunk-23",
+            "legal/shopee-shipping-policy.md::chunk-21",
+            "legal/shopee-shipping-policy.md::chunk-24",
+            "legal/shopee-shipping-policy.md::chunk-22"
+          ]
+        },
+        {
+          "id": "q16",
+          "latency_s": 0.0268,
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "first_hit_rank": 2,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-listing-policy.md::chunk-30",
+            "legal/shopee-listing-policy.md::chunk-29",
+            "legal/shopee-listing-policy.md::chunk-31",
+            "legal/shopee-listing-policy.md::chunk-28",
+            "news/article_07.md::chunk-19"
+          ]
+        },
+        {
+          "id": "q17",
+          "latency_s": 0.0264,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-listing-policy.md::chunk-7",
+            "legal/shopee-listing-policy.md::chunk-1",
+            "legal/shopee-listing-policy.md::chunk-33",
+            "news/article_07.md::chunk-38",
+            "legal/shopee-listing-policy.md::chunk-28"
+          ]
+        },
+        {
+          "id": "q18",
+          "latency_s": 0.0265,
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "first_hit_rank": 2,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-prohibited-items.md::chunk-6",
+            "legal/shopee-prohibited-items.md::chunk-4",
+            "legal/shopee-prohibited-items.md::chunk-5",
+            "legal/shopee-listing-policy.md::chunk-2",
+            "legal/shopee-prohibited-items.md::chunk-19"
+          ]
+        },
+        {
+          "id": "q19",
+          "latency_s": 0.0256,
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "first_hit_rank": null,
+          "context_coverage": 0.4828,
+          "retrieved_ids": [
+            "legal/shopee-prohibited-items.md::chunk-4",
+            "news/article_07.md::chunk-40",
+            "legal/shopee-prohibited-items.md::chunk-19",
+            "legal/shopee-listing-policy.md::chunk-2",
+            "legal/shopee-shipping-policy.md::chunk-2"
+          ]
+        },
+        {
+          "id": "q20",
+          "latency_s": 0.0267,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_06.md::chunk-5",
+            "legal/shopee-shipping-policy.md::chunk-22",
+            "news/article_02.md::chunk-2",
+            "news/article_07.md::chunk-26",
+            "news/article_07.md::chunk-23"
+          ]
+        }
+      ]
+    },
+    "bm25": {
+      "summary": {
+        "hit": 0.9,
+        "reciprocal_rank": 0.825,
+        "context_coverage": 0.97,
+        "latency_s": 0.0018
+      },
+      "rows": [
+        {
+          "id": "q01",
+          "latency_s": 0.0236,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-5",
+            "news/article_07.md::chunk-19",
+            "news/article_07.md::chunk-5",
+            "news/article_02.md::chunk-3",
+            "news/article_04.md::chunk-0"
+          ]
+        },
+        {
+          "id": "q02",
+          "latency_s": 0.0008,
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "first_hit_rank": null,
+          "context_coverage": 0.7188,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-4",
+            "legal/shopee-return-policy.md::chunk-5",
+            "news/article_07.md::chunk-10",
+            "legal/shopee-return-policy.md::chunk-9",
+            "news/article_02.md::chunk-3"
+          ]
+        },
+        {
+          "id": "q03",
+          "latency_s": 0.0006,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-10",
+            "legal/shopee-return-policy.md::chunk-8",
+            "legal/shopee-return-policy.md::chunk-12",
+            "legal/shopee-return-policy.md::chunk-11",
+            "legal/shopee-return-policy.md::chunk-7"
+          ]
+        },
+        {
+          "id": "q04",
+          "latency_s": 0.0008,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-16",
+            "news/article_07.md::chunk-8",
+            "legal/shopee-return-policy.md::chunk-17",
+            "legal/shopee-return-policy.md::chunk-25",
+            "news/article_07.md::chunk-22"
+          ]
+        },
+        {
+          "id": "q05",
+          "latency_s": 0.0007,
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "first_hit_rank": 2,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-24",
+            "legal/shopee-return-policy.md::chunk-27",
+            "legal/shopee-return-policy.md::chunk-23",
+            "news/article_07.md::chunk-8",
+            "legal/shopee-return-policy.md::chunk-20"
+          ]
+        },
+        {
+          "id": "q06",
+          "latency_s": 0.0007,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_01.md::chunk-8",
+            "news/article_01.md::chunk-1",
+            "news/article_07.md::chunk-57",
+            "news/article_01.md::chunk-3",
+            "news/article_01.md::chunk-2"
+          ]
+        },
+        {
+          "id": "q07",
+          "latency_s": 0.001,
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "first_hit_rank": null,
+          "context_coverage": 0.6818,
+          "retrieved_ids": [
+            "news/article_02.md::chunk-6",
+            "legal/shopee-return-policy.md::chunk-22",
+            "news/article_02.md::chunk-1",
+            "news/article_01.md::chunk-9",
+            "news/article_02.md::chunk-5"
+          ]
+        },
+        {
+          "id": "q08",
+          "latency_s": 0.0006,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_04.md::chunk-0",
+            "news/article_04.md::chunk-2",
+            "news/article_01.md::chunk-6",
+            "news/article_01.md::chunk-4",
+            "news/article_04.md::chunk-4"
+          ]
+        },
+        {
+          "id": "q09",
+          "latency_s": 0.0007,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_05.md::chunk-3",
+            "news/article_02.md::chunk-1",
+            "news/article_05.md::chunk-2",
+            "legal/shopee-return-policy.md::chunk-21",
+            "legal/shopee-return-policy.md::chunk-22"
+          ]
+        },
+        {
+          "id": "q10",
+          "latency_s": 0.0009,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_07.md::chunk-6",
+            "legal/shopee-return-policy.md::chunk-20",
+            "news/article_07.md::chunk-46",
+            "news/article_07.md::chunk-7",
+            "news/article_02.md::chunk-6"
+          ]
+        },
+        {
+          "id": "q11",
+          "latency_s": 0.0007,
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "first_hit_rank": 2,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-dispute-resolution.md::chunk-1",
+            "legal/shopee-dispute-resolution.md::chunk-2",
+            "legal/shopee-return-policy.md::chunk-2",
+            "legal/shopee-dispute-resolution.md::chunk-0",
+            "legal/shopee-dispute-resolution.md::chunk-6"
+          ]
+        },
+        {
+          "id": "q12",
+          "latency_s": 0.0007,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-dispute-resolution.md::chunk-5",
+            "legal/shopee-dispute-resolution.md::chunk-4",
+            "legal/shopee-dispute-resolution.md::chunk-7",
+            "legal/shopee-dispute-resolution.md::chunk-3",
+            "legal/shopee-shipping-policy.md::chunk-23"
+          ]
+        },
+        {
+          "id": "q13",
+          "latency_s": 0.0005,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-shipping-policy.md::chunk-2",
+            "legal/shopee-shipping-policy.md::chunk-3",
+            "legal/shopee-shipping-policy.md::chunk-4",
+            "legal/shopee-shipping-policy.md::chunk-1",
+            "legal/shopee-shipping-policy.md::chunk-11"
+          ]
+        },
+        {
+          "id": "q14",
+          "latency_s": 0.0008,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-shipping-policy.md::chunk-30",
+            "legal/shopee-shipping-policy.md::chunk-31",
+            "legal/shopee-shipping-policy.md::chunk-11",
+            "legal/shopee-shipping-policy.md::chunk-12",
+            "legal/shopee-shipping-policy.md::chunk-6"
+          ]
+        },
+        {
+          "id": "q15",
+          "latency_s": 0.0008,
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "first_hit_rank": 2,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-shipping-policy.md::chunk-28",
+            "legal/shopee-shipping-policy.md::chunk-23",
+            "legal/shopee-shipping-policy.md::chunk-35",
+            "legal/shopee-dispute-resolution.md::chunk-5",
+            "legal/shopee-shipping-policy.md::chunk-36"
+          ]
+        },
+        {
+          "id": "q16",
+          "latency_s": 0.0007,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-listing-policy.md::chunk-29",
+            "legal/shopee-prohibited-items.md::chunk-15",
+            "legal/shopee-listing-policy.md::chunk-30",
+            "legal/shopee-listing-policy.md::chunk-28",
+            "legal/shopee-listing-policy.md::chunk-31"
+          ]
+        },
+        {
+          "id": "q17",
+          "latency_s": 0.0006,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-listing-policy.md::chunk-7",
+            "legal/shopee-listing-policy.md::chunk-13",
+            "legal/shopee-listing-policy.md::chunk-0",
+            "legal/shopee-listing-policy.md::chunk-8",
+            "legal/shopee-prohibited-items.md::chunk-0"
+          ]
+        },
+        {
+          "id": "q18",
+          "latency_s": 0.0004,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-prohibited-items.md::chunk-5",
+            "legal/shopee-prohibited-items.md::chunk-4",
+            "legal/shopee-listing-policy.md::chunk-16",
+            "legal/shopee-prohibited-items.md::chunk-8",
+            "legal/shopee-listing-policy.md::chunk-17"
+          ]
+        },
+        {
+          "id": "q19",
+          "latency_s": 0.0004,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-prohibited-items.md::chunk-3",
+            "news/article_07.md::chunk-13",
+            "news/article_01.md::chunk-3",
+            "news/article_02.md::chunk-8",
+            "legal/shopee-return-policy.md::chunk-17"
+          ]
+        },
+        {
+          "id": "q20",
+          "latency_s": 0.0006,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_06.md::chunk-5",
+            "legal/shopee-shipping-policy.md::chunk-8",
+            "news/article_07.md::chunk-11",
+            "legal/shopee-shipping-policy.md::chunk-11",
+            "news/article_06.md::chunk-0"
+          ]
+        }
+      ]
+    },
+    "hybrid_rrf": {
+      "summary": {
+        "hit": 0.9,
+        "reciprocal_rank": 0.81,
+        "context_coverage": 0.9778,
+        "latency_s": 0.0285
+      },
+      "rows": [
+        {
+          "id": "q01",
+          "latency_s": 0.0308,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-5",
+            "news/article_07.md::chunk-19",
+            "news/article_07.md::chunk-5",
+            "legal/shopee-return-policy.md::chunk-16",
+            "news/article_07.md::chunk-22"
+          ]
+        },
+        {
+          "id": "q02",
+          "latency_s": 0.0292,
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "first_hit_rank": null,
+          "context_coverage": 0.875,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-4",
+            "legal/shopee-return-policy.md::chunk-8",
+            "legal/shopee-return-policy.md::chunk-15",
+            "legal/shopee-return-policy.md::chunk-9",
+            "legal/shopee-return-policy.md::chunk-5"
+          ]
+        },
+        {
+          "id": "q03",
+          "latency_s": 0.0279,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-10",
+            "legal/shopee-return-policy.md::chunk-8",
+            "legal/shopee-return-policy.md::chunk-12",
+            "legal/shopee-return-policy.md::chunk-9",
+            "legal/shopee-return-policy.md::chunk-11"
+          ]
+        },
+        {
+          "id": "q04",
+          "latency_s": 0.0287,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-16",
+            "news/article_07.md::chunk-8",
+            "news/article_07.md::chunk-22",
+            "legal/shopee-return-policy.md::chunk-25",
+            "legal/shopee-return-policy.md::chunk-17"
+          ]
+        },
+        {
+          "id": "q05",
+          "latency_s": 0.028,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-return-policy.md::chunk-27",
+            "legal/shopee-return-policy.md::chunk-24",
+            "news/article_07.md::chunk-8",
+            "legal/shopee-return-policy.md::chunk-20",
+            "news/article_07.md::chunk-9"
+          ]
+        },
+        {
+          "id": "q06",
+          "latency_s": 0.0282,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_01.md::chunk-8",
+            "news/article_01.md::chunk-1",
+            "news/article_01.md::chunk-2",
+            "news/article_01.md::chunk-3",
+            "news/article_01.md::chunk-4"
+          ]
+        },
+        {
+          "id": "q07",
+          "latency_s": 0.0284,
+          "hit": false,
+          "reciprocal_rank": 0.0,
+          "first_hit_rank": null,
+          "context_coverage": 0.6818,
+          "retrieved_ids": [
+            "news/article_02.md::chunk-6",
+            "legal/shopee-return-policy.md::chunk-22",
+            "legal/shopee-return-policy.md::chunk-21",
+            "news/article_02.md::chunk-1",
+            "legal/shopee-return-policy.md::chunk-23"
+          ]
+        },
+        {
+          "id": "q08",
+          "latency_s": 0.0278,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_04.md::chunk-0",
+            "news/article_01.md::chunk-6",
+            "news/article_04.md::chunk-2",
+            "news/article_04.md::chunk-4",
+            "news/article_04.md::chunk-1"
+          ]
+        },
+        {
+          "id": "q09",
+          "latency_s": 0.028,
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "first_hit_rank": 2,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_05.md::chunk-2",
+            "news/article_05.md::chunk-3",
+            "news/article_05.md::chunk-1",
+            "news/article_02.md::chunk-1",
+            "legal/shopee-return-policy.md::chunk-22"
+          ]
+        },
+        {
+          "id": "q10",
+          "latency_s": 0.0281,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_07.md::chunk-6",
+            "news/article_07.md::chunk-7",
+            "news/article_07.md::chunk-19",
+            "news/article_07.md::chunk-22",
+            "news/article_02.md::chunk-6"
+          ]
+        },
+        {
+          "id": "q11",
+          "latency_s": 0.0281,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-dispute-resolution.md::chunk-2",
+            "legal/shopee-dispute-resolution.md::chunk-1",
+            "legal/shopee-dispute-resolution.md::chunk-0",
+            "legal/shopee-dispute-resolution.md::chunk-6",
+            "legal/shopee-return-policy.md::chunk-2"
+          ]
+        },
+        {
+          "id": "q12",
+          "latency_s": 0.0278,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-dispute-resolution.md::chunk-5",
+            "legal/shopee-dispute-resolution.md::chunk-4",
+            "legal/shopee-dispute-resolution.md::chunk-3",
+            "legal/shopee-dispute-resolution.md::chunk-7",
+            "legal/shopee-dispute-resolution.md::chunk-0"
+          ]
+        },
+        {
+          "id": "q13",
+          "latency_s": 0.0274,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-shipping-policy.md::chunk-2",
+            "legal/shopee-shipping-policy.md::chunk-1",
+            "legal/shopee-shipping-policy.md::chunk-3",
+            "legal/shopee-shipping-policy.md::chunk-4",
+            "legal/shopee-shipping-policy.md::chunk-5"
+          ]
+        },
+        {
+          "id": "q14",
+          "latency_s": 0.0284,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-shipping-policy.md::chunk-30",
+            "legal/shopee-shipping-policy.md::chunk-31",
+            "legal/shopee-shipping-policy.md::chunk-12",
+            "legal/shopee-shipping-policy.md::chunk-22",
+            "legal/shopee-shipping-policy.md::chunk-32"
+          ]
+        },
+        {
+          "id": "q15",
+          "latency_s": 0.0285,
+          "hit": true,
+          "reciprocal_rank": 0.5,
+          "first_hit_rank": 2,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-shipping-policy.md::chunk-28",
+            "legal/shopee-shipping-policy.md::chunk-23",
+            "legal/shopee-shipping-policy.md::chunk-21",
+            "legal/shopee-shipping-policy.md::chunk-24",
+            "legal/shopee-shipping-policy.md::chunk-25"
+          ]
+        },
+        {
+          "id": "q16",
+          "latency_s": 0.0292,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-listing-policy.md::chunk-29",
+            "legal/shopee-listing-policy.md::chunk-30",
+            "legal/shopee-listing-policy.md::chunk-31",
+            "legal/shopee-listing-policy.md::chunk-28",
+            "legal/shopee-prohibited-items.md::chunk-15"
+          ]
+        },
+        {
+          "id": "q17",
+          "latency_s": 0.0293,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-listing-policy.md::chunk-7",
+            "news/article_07.md::chunk-38",
+            "legal/shopee-listing-policy.md::chunk-1",
+            "legal/shopee-listing-policy.md::chunk-13",
+            "legal/shopee-listing-policy.md::chunk-33"
+          ]
+        },
+        {
+          "id": "q18",
+          "latency_s": 0.0287,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-prohibited-items.md::chunk-5",
+            "legal/shopee-prohibited-items.md::chunk-4",
+            "legal/shopee-prohibited-items.md::chunk-6",
+            "legal/shopee-listing-policy.md::chunk-17",
+            "legal/shopee-listing-policy.md::chunk-18"
+          ]
+        },
+        {
+          "id": "q19",
+          "latency_s": 0.0282,
+          "hit": true,
+          "reciprocal_rank": 0.2,
+          "first_hit_rank": 5,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "legal/shopee-shipping-policy.md::chunk-33",
+            "news/article_07.md::chunk-31",
+            "legal/shopee-prohibited-items.md::chunk-0",
+            "legal/shopee-prohibited-items.md::chunk-4",
+            "legal/shopee-prohibited-items.md::chunk-3"
+          ]
+        },
+        {
+          "id": "q20",
+          "latency_s": 0.0285,
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "first_hit_rank": 1,
+          "context_coverage": 1.0,
+          "retrieved_ids": [
+            "news/article_06.md::chunk-5",
+            "news/article_06.md::chunk-0",
+            "legal/shopee-shipping-policy.md::chunk-22",
+            "legal/shopee-shipping-policy.md::chunk-8",
+            "news/article_02.md::chunk-2"
+          ]
+        }
+      ]
+    }
+  }
+}

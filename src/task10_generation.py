@@ -29,7 +29,7 @@ logger = logging.getLogger(__name__)
 
 TOP_K = 5
 TOP_P = 0.9
-TEMPERATURE = 0.3
+TEMPERATURE = 1
 MAX_OUTPUT_TOKENS = 800
 
 LLM_PROVIDER = os.getenv("LLM_PROVIDER", "openai").strip().lower()
@@ -91,8 +91,8 @@ def call_llm(system_prompt: str, user_message: str) -> str:
                 {"role": "user", "content": user_message},
             ],
             temperature=TEMPERATURE,
-            top_p=TOP_P,
-            max_tokens=MAX_OUTPUT_TOKENS,
+            # top_p=TOP_P,
+            # max_tokens=MAX_OUTPUT_TOKENS,
         )
         return (response.choices[0].message.content or "").strip()
 
@@ -117,12 +117,13 @@ def call_llm(system_prompt: str, user_message: str) -> str:
         from anthropic import Anthropic
 
         # Claude không cho đặt đồng thời temperature và top_p: chỉ dùng temperature.
+
         response = Anthropic(timeout=60).messages.create(
             model=LLM_MODEL,
             system=system_prompt,
             messages=[{"role": "user", "content": user_message}],
             temperature=TEMPERATURE,
-            max_tokens=MAX_OUTPUT_TOKENS,
+            # max_tokens=MAX_OUTPUT_TOKENS,
         )
         return "".join(block.text for block in response.content if block.type == "text").strip()
 

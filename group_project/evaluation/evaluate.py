@@ -5,10 +5,10 @@ Hai config dùng cùng golden dataset, generator, evaluator, prompt và top_k; c
 khác retrieval strategy (use_reranking=False/True trong Task 9).
 
     # Chỉ đo retrieval (không cần API key): hit@k, MRR, context coverage
-    python -m src.evaluate --retrieval-only
+    python group_project/evaluation/evaluate.py --retrieval-only
 
     # Đầy đủ: generation + 4 metric RAGAS (cần OPENAI_API_KEY)
-    python -m src.evaluate
+    python group_project/evaluation/evaluate.py
 
 Kết quả: group_project/evaluation/results/{retrieval,ragas}_results.json
 """
@@ -19,6 +19,7 @@ import json
 import os
 import re
 import statistics
+import sys
 import time
 import unicodedata
 from datetime import datetime
@@ -29,7 +30,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))  # để import được package src khi chạy trực tiếp file này
 EVAL_DIR = ROOT / "group_project" / "evaluation"
 GOLDEN_PATH = EVAL_DIR / "golden_dataset.json"
 RESULTS_DIR = EVAL_DIR / "results"
@@ -89,9 +92,9 @@ def summarize(rows: list[dict], keys: list[str]) -> dict:
 
 
 def run_retrieval_only() -> dict:
-    from .task5_semantic_search import semantic_search
-    from .task6_lexical_search import lexical_search
-    from .task9_retrieval_pipeline import retrieve
+    from src.task5_semantic_search import semantic_search
+    from src.task6_lexical_search import lexical_search
+    from src.task9_retrieval_pipeline import retrieve
 
     golden = load_golden()
     semantic_search("warm-up", top_k=1)  # nạp embedding model trước khi đo latency
@@ -127,7 +130,7 @@ def _ragas_components():
         Faithfulness,
     )
 
-    from .task4_chunking_indexing import embed_texts
+    from src.task4_chunking_indexing import embed_texts
 
     class PipelineEmbedding(BaseRagasEmbedding):
         """Dùng chung embed_texts() của pipeline (bge-m3) cho answer relevancy."""
@@ -171,8 +174,8 @@ async def score_sample(metrics: dict, sample: dict, semaphore: asyncio.Semaphore
 
 
 def generate_samples(use_reranking: bool) -> list[dict]:
-    from .task10_generation import generate_answer
-    from .task9_retrieval_pipeline import retrieve
+    from src.task10_generation import generate_answer
+    from src.task9_retrieval_pipeline import retrieve
 
     samples = []
     for item in load_golden():
@@ -197,7 +200,7 @@ def generate_samples(use_reranking: bool) -> list[dict]:
 
 
 async def run_full() -> dict:
-    from .task10_generation import LLM_MODEL, LLM_PROVIDER
+    from src.task10_generation import LLM_MODEL, LLM_PROVIDER
 
     metrics = _ragas_components()
     semaphore = asyncio.Semaphore(CONCURRENCY)
